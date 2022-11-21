@@ -66,7 +66,7 @@ class TransactionList extends StatelessWidget {
                             transactions[index].id,
                           ),
                           label: const Text(
-                            'Delete',
+                            'Deleted',
                             style: TextStyle(
                               color: Colors.red,
                             ),
