@@ -152,12 +152,15 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           );
-    final txListWidget = SizedBox(
-      height: (mediaQuery.size.height -
-              appBar.preferredSize.height -
-              mediaQuery.padding.top) *
-          .7,
-      child: TransactionList(_userTransactions, _deleteTransaction),
+    final txListWidget = Container(
+      padding: const EdgeInsets.only(left: 15, right: 15),
+      child: SizedBox(
+        height: (mediaQuery.size.height -
+                appBar.preferredSize.height -
+                mediaQuery.padding.top) *
+            .7,
+        child: TransactionList(_userTransactions, _deleteTransaction),
+      ),
     );
     final pageBody = SafeArea(
       child: SingleChildScrollView(
@@ -184,7 +187,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-            const CustomExpansion(),
+            //const CustomExpansion(),
             if (!islandscape)
               SizedBox(
                 height: (mediaQuery.size.height -
@@ -203,7 +206,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           .7,
                       child: Chart(_recentTransactions),
                     )
-                  : txListWidget,
+                  : txListWidget
           ],
         ),
       ),
