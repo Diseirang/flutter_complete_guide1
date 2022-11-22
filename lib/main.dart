@@ -184,7 +184,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-            const CustomExpansion(),
+            //const CustomExpansion(),
             if (!islandscape)
               SizedBox(
                 height: (mediaQuery.size.height -
