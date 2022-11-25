@@ -4,6 +4,7 @@ class ChartBar extends StatelessWidget {
   final String label;
   final double spendingAmount;
   final double spendingPctOfTotal;
+  
   const ChartBar(this.label, this.spendingAmount, this.spendingPctOfTotal,
       {Key key})
       : super(key: key);
